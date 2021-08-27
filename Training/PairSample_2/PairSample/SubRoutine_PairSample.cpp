@@ -28,7 +28,7 @@ int main()
         }
     }
 
-    const char* pBreadName[] = { "食パン", "クリームパン", "メロンパン", "クロワッサン",NULL};
+    const char* pBreadName[] = { "食パン", "クリームパン", "メロンパン", "クロワッサン", NULL};
     const int pBreadPrice[] = { 70, 100, 130, 150, -1 };
 
     int nBread = 0;
