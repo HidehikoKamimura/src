@@ -1,5 +1,7 @@
 ﻿#include <iostream>
 
+#define INFINITE 10000
+
 struct Area_L {
     const char* m_pName;
     double m_Min;
@@ -33,15 +35,15 @@ int main()
     };
 
     Point pPoint[] = {
-        {  350,  800 },
-        { 4200, 1200 },
-        { 2800, 1600 },
-        { 4100, 1100 },
-        { 2100, 1150 },
-        {    0,    0 }
+        {      350,      800 },
+        {     4200,     1200 },
+        {     2800,     1600 },
+        {     4100,     1100 },
+        {     2100,     1150 },
+        { INFINITE, INFINITE }
     };
 
-    for (int i = 0; pPoint[i].m_H != 0; i++) {
+    for (int i = 0; pPoint[i].m_H != INFINITE; i++) {
         
         const char* pName_L = NULL;
         for (int j = 0; pArea_L[j].m_pName != NULL ; j++ ) {
